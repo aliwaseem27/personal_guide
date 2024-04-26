@@ -1,6 +1,6 @@
-# personal_guide
+# Personal Guide
 
-Customers managment made easier with Maps
+Customers management made easier with Maps
 
 ## Getting Started
 

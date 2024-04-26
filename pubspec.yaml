@@ -1,5 +1,5 @@
 name: personal_guide
-description: "Customers managment made easier with Maps"
+description: "Customers management made easier with Maps"
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.6
+  google_maps_flutter: ^2.6.1
 
 dev_dependencies:
   flutter_test:

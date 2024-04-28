@@ -1,9 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_guide/common/widgets/social_buttons.dart';
 import 'package:personal_guide/features/authentication/screens/sign_up/widgets/signup_form.dart';
 import 'package:personal_guide/utils/constants/app_sizes.dart';
 import 'package:personal_guide/utils/constants/app_strings.dart';
 
+@RoutePage()
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
 

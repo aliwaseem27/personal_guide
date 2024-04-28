@@ -1,4 +1,4 @@
-import 'package:auto_route/auto_route.dart';
+import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_guide/common/widgets/social_buttons.dart';
 import 'package:personal_guide/features/authentication/screens/sign_up/widgets/signup_form.dart';

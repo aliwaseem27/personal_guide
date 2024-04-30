@@ -1,10 +1,8 @@
-import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:personal_guide/common/widgets/social_buttons.dart';
 import 'package:personal_guide/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:personal_guide/utils/constants/app_sizes.dart';
 
-@RoutePage()
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 

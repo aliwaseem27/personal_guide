@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:personal_guide/common/widgets/social_buttons.dart';
-import 'package:personal_guide/features/authentication/screens/sign_up/widgets/signup_form.dart';
-import 'package:personal_guide/utils/constants/app_sizes.dart';
-import 'package:personal_guide/utils/constants/app_strings.dart';
+import 'package:get/get.dart';
+import 'package:personal_guide/features/authentication/screens/signup/widgets/signup_form.dart';
 
-class SignUpScreen extends StatelessWidget {
-  const SignUpScreen({super.key});
+import '../../../../common/widgets/login_signup/form_divider.dart';
+import '../../../../common/widgets/login_signup/social_buttons.dart';
+import '../../../../utils/constants/app_sizes.dart';
+import '../../../../utils/constants/app_strings.dart';
+
+
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body:  SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(AppSizes.defaultSpace),
           child: Column(
@@ -22,14 +26,14 @@ class SignUpScreen extends StatelessWidget {
               const SizedBox(height: AppSizes.spaceBtwSections),
 
               // Form
-              const SignUpForm(),
+              const TSignupForm(),
               const SizedBox(height: AppSizes.spaceBtwSections),
 
               // Divider
-              // TFormDivider(dividerText: TTexts.orSignUpWith.capitalize!),
+              TFormDivider(dividerText: AppTexts.orSignUpWith.capitalize!),
               const SizedBox(height: AppSizes.spaceBtwSections),
 
-              //Social Buttons
+              // Social Buttons
               const AppSocialButtons(),
             ],
           ),

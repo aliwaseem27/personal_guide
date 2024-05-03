@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
-import 'utils/constants/app_colors.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -11,17 +8,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       title: 'Personal Guide',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const Scaffold(
-        backgroundColor: AppColors.primary,
         body: Center(
           child: CircularProgressIndicator(
-            color: AppColors.white,
+            color: Colors.grey,
           ),
         ),
       ),
